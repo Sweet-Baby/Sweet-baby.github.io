@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+i,em,b {
+  list-style: none;
+}
+.bodyBox {
+  width: 100%;
+  min-height: 812px;
+  /* background-color: hotpink; */
+  background: url('../image/Yue.jpg') no-repeat 100%/100%;
+}
+header {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}

@@ -5,9 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css">
     <title>Yue</title>
   </head>
   <body>
-    测试icon
+    <h1></h1>
+    <div class="bodyBox" id="app">
+      <header>写给粤粤的一封信</header>
+      <ul>
+        <li v-for="(item, index) in list" :key="index">{{item}}</li>
+      </ul>
+    </div>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  new Vue({
+    el:"#app",
+    data() {
+      return {
+        list:[
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+          "123123",
+        ]
+      }
+    },
+    watch: {
+    },
+    components: {},
+    methods: {},
+
+    // 创建前状态
+    beforeCreate() {},
+
+    // 创建完毕状态
+    created() {},
+
+    // 挂载前状态
+    beforeMount() {},
+
+    // 挂载结束状态
+    mounted() {},
+
+    // 更新前状态
+    beforeUpdate() {},
+
+    // 更新完成状态
+    updated() {},
+
+    // 销毁前状态
+    beforeDestroy() {},
+
+    // 销毁完成状态
+    destroyed() {}
+  })
+</script>
