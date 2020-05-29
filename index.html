@@ -1,98 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html>
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./css/index.css">
   <title>Yue</title>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 50%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      border: 5px solid black;
+      padding: .5rem 2rem;
+      background: white;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="bodyBox">
-    <header>给粤粤</header>
-    <ul>
-      <li v-for="(item, index) in list" :key="index">{{item}}</li>
-    </ul>
-  </div>
+
+
+
+  <h1>
+    <a href="./main.html">NEXT</a>
+  </h1>
+
+  <script src="./js/wmgwdw.js"></script>
+  <script src="./js/demo.js"></script>
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script>
-  new Vue({
-    el: ".bodyBox",
-    data() {
-      return {
-        list: [
-          "我希望这个东西能给你带来一些快乐我的宝贝,",
-          "你要知道,生活很苦,但你很甜",
-          "我想了好久要对你说的话,但是总是零零碎碎的,",
-          "总是不能表达出我的意思,",
-          "我爱你这句话太沉重了",
-          "我喜欢你又太敷衍了",
-          "我想你了我觉得就刚刚好",
-          "这样不沉重也不敷衍,",
-          "你要知道我给你说我想你了并不是刚刚才想",
-          "而是我实在憋不住了才给你说",
-          "虽然你比我大一些,但是我还是想保护你,呵护你",
-          "人生啊,总是不断在遇见各种各样的人,",
-          "也在失去各种各样的人,",
-          "直到我遇见了你,我惊艳了,",
-          "所以在依雪的时候我想尽一切办法想和你搭上话,",
-          "我惊艳了,我还能遇见这样的奇女子,",
-          "其实上次就那个减薪60%的时候,",
-          "我三番五次的去财务找你并不是为了工资,",
-          "而是为了和你多说上几句话,",
-          "和你说话我便会很开心,很舒适",
-          "你知道你那次给我说陪你吃饭的时候,",
-          "我心里高兴惨了,",
-          "遇见你是我最大的幸运,",
-          "和你在一起是我最正确的决定",
-          "所遇是你,所欲也是你",
-          "",
-          "I LOVE YOU THREE THOUSAND TIMES",
-          "这句英文的意思是我爱你三千遍,",
-          "但是我爱你不止三千遍,",
-          "因为如果爱你只有三千遍的话,",
-          "一天爱你一遍也只能爱八年,",
-          "我要爱你一亿零九百五十万遍,",
-          "这样算下来一天就可以爱你三千遍,",
-          "但是我觉得还是不够,",
-          "我要爱你一百零九亿五千万遍,",
-          "爱你一万年!"
-        ]
-      }
-    },
-    watch: {
-    },
-    components: {},
-    methods: {},
-
-    // 创建前状态
-    beforeCreate() { },
-
-    // 创建完毕状态
-    created() { },
-
-    // 挂载前状态
-    beforeMount() { },
-
-    // 挂载结束状态
-    mounted() { },
-
-    // 更新前状态
-    beforeUpdate() { },
-
-    // 更新完成状态
-    updated() { },
-
-    // 销毁前状态
-    beforeDestroy() { },
-
-    // 销毁完成状态
-    destroyed() { }
-  })
-</script>
