@@ -32,19 +32,30 @@
             margin-bottom: 40px;
             text-shadow: 10px 5px 10px black;
         }
-        span {
+        .black p {
             color: #fff;
+        }
+        .black1 p {
+            color: #000;
         }
     </style>
 </head>
 <body>
-    <div class="box" :class="{boxClcor : isText}">
-        <span @click="isText = false">这里可以点喔!</span>
-        <p>我</p>
-        <p>很</p>
-        <p>中</p>
-        <p>意</p>
-        <p>你</p>
+    <div class="box" :class="{boxClcor : isText}" @click="isText = false">
+        <div class="black" v-if="isText">
+            <p>这</p>
+            <p>里</p>
+            <p>可</p>
+            <p>以</p>
+            <p>点</p>
+        </div>
+        <div class="black1" v-else>
+            <p>我</p>
+            <p>很</p>
+            <p>中</p>
+            <p>意</p>
+            <p>你</p>
+        </div>
     </div>
 </body>
 </html>
@@ -54,7 +65,7 @@
     el: ".box",
     data() {
       return {
-          isText:true
+        isText:true
       }
     },
     watch: {},
