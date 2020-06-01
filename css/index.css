@@ -30,7 +30,7 @@ ul {
 }
 
 .animation {
-  animation: 22s wordsLoop linear normal;
+  animation: 38s wordsLoop linear normal;
 }
 
 ul li {
@@ -50,8 +50,8 @@ ul li {
     -webkit-transform: translateY(0);
   }
   100% {
-    transform: translateY(-600px);
-    -webkit-transform: translateY(-600px);
+    transform: translateY(-800px);
+    -webkit-transform: translateY(-800px);
   }
 }
 
@@ -61,8 +61,8 @@ ul li {
     -webkit-transform: translateY(0);
   }
   100% {
-    transform: translateY(-600px);
-    -webkit-transform: translateY(-600px);
+    transform: translateY(-800px);
+    -webkit-transform: translateY(-800px);
   }
 }
 
