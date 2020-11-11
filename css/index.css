@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+i,em,b {
+  font-style: normal;
+}
+.bodyBox {
+  background: url('../image/Yue.jpg') no-repeat fixed 100%/100%;
+  background-position: fixed;
+  min-height: 750px;
+}
+header {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  background: linear-gradient(to right, #6600FF, #00CC99);
+  color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 20px;
+}
+.ulBox {
+  overflow-y: scroll;
+}
+ul {
+  height: 500px;
+}
+
+.animation {
+  animation: 38s wordsLoop linear normal;
+}
+
+ul li {
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  background: linear-gradient(to right, #6600FF, #00CC99);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+
+ 
+@keyframes wordsLoop {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-800px);
+    -webkit-transform: translateY(-800px);
+  }
+}
+
+@-webkit-keyframes wordsLoop {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-800px);
+    -webkit-transform: translateY(-800px);
+  }
+}
+
+a {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to right, #0033CC, #00FF99);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-decoration: underline; */
+}

@@ -1,74 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>支付凭证</title>
-    <link rel="stylesheet" href="/base.css">
-    <link rel="stylesheet" href="/voucher.css">
-    <script src="/js/common.js"></script>
-    <script src="/js/JQuery.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+  <meta charset="utf-8">
+  <title>Yue</title>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 50%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      border: 5px solid black;
+      padding: .5rem 2rem;
+      background: white;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="main">
-        <div id="screenshot">
-            <div class="image">
-                <img src="/logoColor.png" alt="">
-                <div class="text">-1500.00</div>
-                <span>交易成功</span>
-            </div>
-            <div class="info">
-                <div class="list">
-                    <div class="label">当前状态：</div>
-                    <div class="content">支付成功</div>
-                </div>
-                <div class="list">
-                    <div class="label">商品：</div>
-                    <div class="content">数字化糖尿病全程管理服务基础版</div>
-                </div>
-                <div class="list">
-                    <div class="label">收款公司：</div>
-                    <div class="content">四川华诺智胜健康科技有限公司</div>
-                </div>
-                <div class="list">
-                    <div class="label">支付时间：</div>
-                    <div class="content">2020-11-04 12:35:32</div>
-                </div>
-                <div class="list">
-                    <div class="label">支付方式：</div>
-                    <div class="content">微信支付</div>
-                </div>
-                <div class="list">
-                    <div class="label">订单编号：</div>
-                    <div class="content">202011010876875234350987</div>
-                </div>
-                <div class="list">
-                    <div class="label">联系客服：</div>
-                    <div class="content">023-68392047</div>
-                </div>
-            </div>
-        </div>
-        <div class="button" id="button">保存购买凭证</div>
-    </div>
+
+  <h1>
+    <a href="./main.html">NEXT</a>
+  </h1>
+
+  <script src="./js/wmgwdw.js"></script>
+  <script src="./js/demo.js"></script>
 </body>
 
 </html>
-<script>
-    $("#button").click(function () {
-        html2canvas($("#screenshot")).then(function (canvas) {
-            var imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
-            window.location.href = imgUri; // 下载图片
-        });
-        //html2canvas($('.tongxingzheng_bg'), {
-        //    onrendered: function (canvas) {
-        //        var data = canvas.toDataURL("image/png");//生成的格式
-        //        //data就是生成的base64码啦
-        //        alert(data);
-        //    }
-        //});
-    });
-</script>
